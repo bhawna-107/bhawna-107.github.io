@@ -64,7 +64,7 @@ const Contact = () => {
           <p className="text-[white] text-[lg]  text-opacity-50 font-normal break-word "> Get news about articles and updates in your inbox.</p>
         </div>
 
-        <div className="flex flex-col pr-[120px]  w-[100%] sm:pt-[0px] pt-[65px]">
+        <div className="flex flex-col pr-[120px]  sm:w-[100%] w-screen sm:pt-[0px] pt-[65px]">
           <form onSubmit={handleSubmit}>
             <div className="relative">
             {errors.name && (
@@ -119,7 +119,7 @@ const Contact = () => {
               />
             </div>
             
-  <div className="z-10 absolute sm:top-[250px] sm:left-[1130px] sm:w-[160px] sm:h-[160px] w-[100px] h-[100px] left-[270px] top-[420px] hover:bg-orange-600 rounded-full border border-orange-600 flex items-center justify-center">
+  <div className="z-10 absolute sm:top-[250px] sm:left-[1130px] sm:w-[160px] sm:h-[160px] w-[100px] h-[100px] left-[270px] top-[400px] hover:bg-orange-600 rounded-full border border-orange-600 flex items-center justify-center">
     <button className="w-full h-full text-orange-600 hover:text-white transition duration-300 rounded-full flex items-center justify-center">
       SEND
     </button>
@@ -131,9 +131,9 @@ const Contact = () => {
       </div>
 
       <div className=" flex flex-col text-[white] font-custom font-bold lg:text-[135px] text-[55px] relative">
-        <span className='sm:pt-[0px] pt-[25px]'>GET </span>
+        <span className='sm:pt-[0px] pt-[38px]'>GET </span>
         <div className="flex lg:flex-row sm:flex-row flex-row">
-          <span className="absolute sm:top-20 top-14">IN</span>
+          <span className="absolute sm:top-20 top-16">IN</span>
           <span className="absolute sm:top-20  top-24 lg:left-[260px]">TOUCH</span>
         </div>
         

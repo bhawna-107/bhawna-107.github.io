@@ -38,7 +38,7 @@ const Navbar = () => {
         </div>
         <p className='w-full h-[1px] bg-[#fff]'></p>
         <span>
-          <img className='sm:absolute hidden pl-[386px] h-[23px] top-10 z-200 ' src={smallstar} alt='star' />
+          <img className='absolute pl-[386px] sm:h-[23px] h-[0px] top-10 z-200 ' src={smallstar} alt='star' />
         </span>
 
         
@@ -51,7 +51,7 @@ const Navbar = () => {
 
     
 
-        <div className=' absolute top-12 left-80 px-[19px] sm:hidden flex flex-1 justify-end items-center cursor-pointer '>
+        <div className=' absolute top-12 pl-[40px] left-80 px-[19px] sm:hidden flex flex-1 justify-end items-center cursor-pointer '>
           <img
             src={toggle ? close : menu}
             alt='menu'

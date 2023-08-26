@@ -10,6 +10,8 @@ import heroman from '../assets/hero-man.png';
 import mainstar from '../assets/main-star.png';
 import mainbg from '../assets/bg-rectangle.png';
 import arrow from '../assets/arrow.png';
+import starline from '../assets/star-line.png'
+import smallstar from '../assets/small-star.png';
 import Navbar from './Navbar';
 
 // const navarray = [
@@ -33,17 +35,17 @@ const Hero = () => {
   // const [toggle, setToggle] = useState(false);
 
   return (
-    <div className='w-full h-[700px] bg-black text-white font-custom flex flex-col'>
+    <div className='w-full sm:h-[690px] h-[660px] bg-black text-white font-custom flex flex-col overflow-hidden'>
       {/* Top Bar */}
       <div className='w-full h-[42px] bg-[#191919] sm:px-[90px] px-[19px]  text-[#626262] flex items-center justify-between'>
         <div className='flex flex-row items-center'>
           <img className='pr-[7px]' src={delivery} alt='delivery' />
-          <h3 className='text-[12px] pr-[14px]'>Free delivery </h3> |
-          <h3 className='text-[12px] pl-[14px]'>Return Policy</h3>
+          <h3 className='sm:text-[12px] text-[10px] sm:pr-[14px] pr-[7px]'>Free delivery </h3> |
+          <h3 className='sm:text-[12px] text-[10px] sm:pl-[14px] pl-[7px]'>Return Policy</h3>
         </div>
         <div className='flex flex-row items-center'>
           <h3 className='pr-[35px] text-[10px]'>Login</h3>
-          <h3 className='pr-[14px] text-[10px]'>Follow US</h3>
+          <h3 className='sm:pr-[14px] sm:text-[10px] text-[0px] '>Follow US</h3>
           <div className='flex gap-5'>
             <img src={facebook} alt='facebook-logo' />
             <img src={linkedin} alt='linkedin-logo' />
@@ -126,29 +128,39 @@ const Hero = () => {
 
 {/* text*/}  
 <div>
-        <div className='z-20 relative sm:px-[90px] px-[19px] font-bold sm:text-[135px] text-[55px] font-custom z-400'>
-                <span className=' absolute sm:pt-[82px] pt-[280px]  pl-[15px]'>
+        <div className='z-30 relative sm:px-[90px] px-[19px] font-bold md:text-[135px] text-[55px] sm:text-[80px] font-custom'>
+                <span className=' absolute md:pt-[62px] sm:pt-[162px] pt-[250px]  pl-[5px]'>
                   Fresh
                 </span>
-                <span className='absolute  sm:pt-[178px] pt-[320px] break-word sm:pl-[300px] pl-[100px]'>
+                <span className='absolute md:pt-[158px] sm:pt-[218px] pt-[290px] break-word sm:pl-[300px] pl-[100px]'>
                   2022
                 </span>
-                <span className='absolute sm:pt-[289px] pt-[360px]  break-word pl-[70px]'>
+                <span className='absolute md:pt-[269px] sm:pt-[290px] pt-[340px]  break-word pl-[70px]'>
                   Look
                 </span>
         </div>
               
       {/* {images} */}
-      <div className='flex justify-end '>
-        <img src={mainstar} alt='star' className='relative sm:pr-[60px] sm:w-[400px] sm:h-[370px] w-[300px] sm:left-0 left-20' />
-        <img src={heroman} alt='bg' className='absolute top-20 sm:pr-[120px] pr-[0px] sm:pl-[0px] pl-[100px]  w-[470px] h-[654px] z-400 object-contain' />
-        <img src={mainbg} alt='bg' className='absolute py-[195px] sm:w-[70%] sm:h-[100%] h-[106%] z-200' />
+      <div className='flex justify-end relative'>
+        <div className='flex sm:flex-col sm:absolute top-80 px-[19px] sm:text-[15px] text-[0px]'>
+        <h2>OREGON JACKET</h2>
+        <h2>$124</h2>
+        </div>
+        <img src={mainstar} alt='star' className='absolute sm:pr-[60px] sm:w-[400px] sm:h-[350px] w-[250px] h-[300px] ' />
+        <img src={heroman} alt='bg' className='absolute  sm:pr-[120px] pr-[0px] sm:pl-[0px] pl-[100px]   h-[554px]  object-cover z-10' />
+        <img src={mainbg} alt='bg' className=' absolute top-36 h-[300px] sm:w-[70%] w-full z-10' />
+      </div>      
+      <div className='relative'>
+      {/* <img className="aboslute w-[900px] h-[20px] text-white bg-white " src={starline} alt='starline' /> */}
+      <p className='absolute top-[450px] md:w-[970px] sm:w-[300px] w-[180px] h-[2px] opacity-[50%] text-white bg-white border-white'></p>
+      <img className="z-20 absolute md:left-[904px] sm:left-40 left-32 top-[406px] "src={smallstar} alt='smallstar' />
       </div>
-      
-      <div className='flex pt-[110px]'>
-      <span className='px-[115px] '>See more</span>
-      <span><img className= 'w-3 h-3 ' src={arrow} alt='arrow'/></span>
+      <div className=' absolute w-fit-content h-[25px] border border-white top-[620px] sm:left-21 left-5  flex flex-row '>
+        <span className='text-[14px]'>See more</span>
+        <img className='pl-[8px] pt-[7px] w-5 h-3' src={arrow} alt='arrow' />
+
       </div>
+      {/* </div> */}
     </div>
     </div>
   );
