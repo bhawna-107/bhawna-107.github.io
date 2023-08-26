@@ -63,6 +63,7 @@ const Hero = () => {
         <img src={heroman} alt='bg' className='absolute  sm:pr-[120px] pr-[0px] sm:pl-[0px] pl-[180px]   h-[554px]  object-cover z-10' />
         <img src={mainbg} alt='bg' className=' absolute top-36 h-[300px] sm:w-[70%] w-full z-10' />
       </div>      
+      {/* top-36 */} 
       <div className='relative'>
       <p className='absolute top-[450px] lg:w-[970px] md:w-[670px] sm:w-[300px] w-[180px] h-[2px] opacity-[50%] text-white bg-white border-white'></p>
       <img className="z-20 absolute lg:left-[904px] md:left-[400px] sm:left-40 left-32 top-[406px] "src={smallstar} alt='smallstar' />

@@ -57,7 +57,7 @@ const Contact = () => {
       };
   return (
     <div id="contact" className="w-full lg:h-[540px] h-[635px] lg:px-[90px] px-[19px] lg:py-[82px] py-[62px] bg-cover relative" style={{ backgroundImage: `url(${require("../assets/contactbg.png")})` }}>
-        <div className='  flex lg:flex-row flex-col flex md:gap-32 sm:gap-20 gap-2 overflow-hidden'>
+        <div className='  flex lg:flex-row flex-col flex lg:gap-32 sm:gap-20 gap-2 overflow-hidden'>
         
         <div className="flex flex-col sm:text-start text-center lg:w-1/2">
           <p className="font-semibold text-[26px] text-[white] text-opacity-50">Newsletter</p>
@@ -92,7 +92,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Email"
+                placeholder="EMAIL"
                 value={formData.email}
                 onChange={handleChange}
                 className={`border-b border-grey-200 bg-transparent w-full px-3 py-2 ${
@@ -110,7 +110,7 @@ const Contact = () => {
                 type="text"
                 id="message"
                 name="message"
-                placeholder="Message"
+                placeholder="MESSAGE"
                 value={formData.message}
                 onChange={handleChange}
                 className={`border-b border-grey-200 bg-transparent w-full px-3 py-2 ${
@@ -119,7 +119,7 @@ const Contact = () => {
               />
             </div>
             
-  <div className="z-10 absolute md:top-[250px] md:left-[1130px] md:w-[160px] md:h-[160px] w-[100px] h-[100px] sm:top-[420px] left-[270px] top-[400px] hover:bg-orange-600 rounded-full border border-orange-600 flex items-center justify-center">
+  <div className="z-10 absolute lg:top-[45%] md:top-[62%] lg:left-[80%] md:left-[60%] lg:w-[160px] lg:h-[160px] sm:w-[120px] sm:h-[120px] w-[100px] h-[100px] sm:top-[420px] left-[270px] top-[400px] hover:bg-orange-600 rounded-full border border-orange-600 flex items-center justify-center">
     <button className="w-full h-full text-orange-600 hover:text-white transition duration-300 rounded-full flex items-center justify-center">
       SEND
     </button>

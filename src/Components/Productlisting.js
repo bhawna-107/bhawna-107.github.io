@@ -18,12 +18,12 @@ const Productlisting = () => {
            <img className='w-10 h-1 ' src={arrow1} alt=''/>
         </div>
       </div>
-      <img className='sm:w-[48%] w-full mt-3' src={starline} alt='' />
+      <img className='sm:w-[48%]  w-full mt-3' src={starline} alt='' />
 
-      <div className='flex sm:flex-row flex-col sm:gap-20 gap-6 mt-3 '>
+      <div className='flex sm:flex-row flex-col  sm:gap-20 gap-6 mt-3 '>
         <div className='flex sm:flex-col flex-row px-[15px] gap-3  '>
           <p className='text-black text-md font-normal'>Apparel</p>
-          <p className='text-black lg:text-[26px] text-lg font-normal'>Accessories</p>
+          <p className='text-black lg:text-[26px] text-md font-bold'>Accessories</p>
           <p className='text-black text-md font-normal' >Best Sellers</p>
           <p className='text-black text-md font-normal'>50% off</p>
         </div>

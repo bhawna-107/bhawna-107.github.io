@@ -26,6 +26,19 @@ const Navbar = () => {
 
     const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+
+  const smoothScrollTo = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const yOffset = -50; // Adjust this value as needed
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+
+  
+
+
   return (
     <div>
         <div className='sm:px-[90px] px-[19px] relative cursor-pointer'>
@@ -42,14 +55,17 @@ const Navbar = () => {
         </span>
 
         
-      <ul className='px-[47px] sm:flex flex-row hidden  gap-21 h-[28px] py-[17px] text-[18px] font-normal cursor-pointer'>
+      <ul className={`px-[47px]  md:flex flex-row hidden  gap-21 h-[28px] py-[17px] text-[18px] font-normal cursor-pointer`}>
         {navarray.map((item) => (
           <li  onClick={() => setActive(item.name)} key={item.id}>
-            <a href={`#${item.id}`}>{item.name}</a>
+            <a href={`#${item.id}`} onClick={(e) => {
+        e.preventDefault(); // Prevent default anchor link behavior
+        smoothScrollTo(item.id);
+      }}>{item.name}</a>
             {item.child && (
               <ul className="">
                 {item.child.map((childItem) => (
-                  <li key={childItem.id} className="">
+                  <li key={childItem.id} className="lg:flex hidden">
                     <a href={`#${childItem.id}`} className="opacity-[50%]">
                       {childItem.name}
                     </a>
@@ -61,13 +77,12 @@ const Navbar = () => {
       </ul>
       </div>
 
-    
 
-        <div className=' absolute sm:top-12 top-12 pl-[40px] left-80 px-[19px] sm:hidden flex flex-1 justify-end items-center cursor-pointer '>
+        <div className=' absolute sm:top-12 top-12 pl-[35px] left-80   x-[19px] sm:hidden flex flex-1 justify-end items-center cursor-pointer '>
           <img
             src={toggle ? close : menu}
             alt='menu'
-            className='w-[100%] h-[38px] object-contain color:black'
+            className=' w-[30px] h-[38px] object-contain color:black'
             onClick={() => setToggle(!toggle)}
           />
           </div>

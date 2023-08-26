@@ -14,7 +14,7 @@ function App() {
     //     <Route path="/contact" component={Contact} />
     //     <Footer />
     // </BrowserRouter>
-    <div>
+    <div className="scroll-smooth">
       <Hero />
       <Productlisting />
       <Contact />
