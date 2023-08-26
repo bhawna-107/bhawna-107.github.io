@@ -42,7 +42,7 @@ const Hero = () => {
 {/* text*/}  
 <div>
         <div className='z-30 relative sm:px-[90px] px-[19px] font-bold lg:text-[135px] md:text-[105px] text-[55px] sm:text-[80px] font-custom'>
-                <span className=' absolute md:pt-[62px] sm:pt-[162px] pt-[250px]  pl-[5px]'>
+                <span className=' absolute md:pt-[70px] sm:pt-[158px] pt-[250px]  pl-[5px]'>
                   Fresh
                 </span>
                 <span className='absolute md:pt-[158px] sm:pt-[218px] pt-[290px] break-word sm:pl-[300px] pl-[100px]'>
@@ -60,12 +60,12 @@ const Hero = () => {
         <h2>$124</h2>
         </div>
         <img src={mainstar} alt='star' className='absolute sm:pr-[60px] sm:w-[400px] sm:h-[350px] w-[250px] h-[300px]' />
-        <img src={heroman} alt='bg' className='absolute  sm:pr-[120px] pr-[0px] sm:pl-[0px] pl-[200px]   h-[554px]  object-cover z-10' />
+        <img src={heroman} alt='bg' className='absolute  sm:pr-[120px] pr-[0px] sm:pl-[0px] pl-[180px]   h-[554px]  object-cover z-10' />
         <img src={mainbg} alt='bg' className=' absolute top-36 h-[300px] sm:w-[70%] w-full z-10' />
       </div>      
       <div className='relative'>
-      <p className='absolute top-[450px] md:w-[970px] sm:w-[300px] w-[180px] h-[2px] opacity-[50%] text-white bg-white border-white'></p>
-      <img className="z-20 absolute md:left-[904px] sm:left-40 left-32 top-[406px] "src={smallstar} alt='smallstar' />
+      <p className='absolute top-[450px] lg:w-[970px] md:w-[670px] sm:w-[300px] w-[180px] h-[2px] opacity-[50%] text-white bg-white border-white'></p>
+      <img className="z-20 absolute lg:left-[904px] md:left-[400px] sm:left-40 left-32 top-[406px] "src={smallstar} alt='smallstar' />
       </div>
       <div className=' absolute w-fit-content h-[25px] border border-white top-[620px] sm:left-21 left-5  flex flex-row '>
         <button className='text-[14px]'>See more</button>

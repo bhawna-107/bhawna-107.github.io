@@ -28,7 +28,7 @@ const Productlisting = () => {
           <p className='text-black text-md font-normal'>50% off</p>
         </div>
 
-        <div className='flex flex-row  gap-3 '>
+        <div className='flex flex-row  gap-3'>
         <div className='lg:w-[300px] w-[100%] h-full  relative'>
               <img className=""  src={product1} alt='product1' />
               <h2 className="text-black text-[26px] font-semibold">Florida Jacket</h2>

@@ -42,20 +42,32 @@ const Navbar = () => {
         </span>
 
         
-      <ul className='px-[47px] sm:flex flex-row hidden  gap-21 h-[28px] py-[17px] text-[18px] font-semibold cursor-pointer'>
+      <ul className='px-[47px] sm:flex flex-row hidden  gap-21 h-[28px] py-[17px] text-[18px] font-normal cursor-pointer'>
         {navarray.map((item) => (
-          <li  onClick={() => setActive(item.name)} key={item.id}><a href={`#${item.id}`}>{item.name}</a></li>
+          <li  onClick={() => setActive(item.name)} key={item.id}>
+            <a href={`#${item.id}`}>{item.name}</a>
+            {item.child && (
+              <ul className="">
+                {item.child.map((childItem) => (
+                  <li key={childItem.id} className="">
+                    <a href={`#${childItem.id}`} className="opacity-[50%]">
+                      {childItem.name}
+                    </a>
+                    </li>
+                    ))}
+              </ul>)}
+          </li>
         ))}
       </ul>
       </div>
 
     
 
-        <div className=' absolute top-12 pl-[40px] left-80 px-[19px] sm:hidden flex flex-1 justify-end items-center cursor-pointer '>
+        <div className=' absolute sm:top-12 top-12 pl-[40px] left-80 px-[19px] sm:hidden flex flex-1 justify-end items-center cursor-pointer '>
           <img
             src={toggle ? close : menu}
             alt='menu'
-            className='w-[100%] h-[28px] object-contain color:black'
+            className='w-[100%] h-[38px] object-contain color:black'
             onClick={() => setToggle(!toggle)}
           />
           </div>

@@ -57,7 +57,7 @@ const Contact = () => {
       };
   return (
     <div id="contact" className="w-full lg:h-[540px] h-[635px] lg:px-[90px] px-[19px] lg:py-[82px] py-[62px] bg-cover relative" style={{ backgroundImage: `url(${require("../assets/contactbg.png")})` }}>
-        <div className='  flex lg:flex-row flex-col flex sm:gap-40 gap-2 overflow-hidden'>
+        <div className='  flex lg:flex-row flex-col flex md:gap-32 sm:gap-20 gap-2 overflow-hidden'>
         
         <div className="flex flex-col sm:text-start text-center lg:w-1/2">
           <p className="font-semibold text-[26px] text-[white] text-opacity-50">Newsletter</p>
@@ -119,7 +119,7 @@ const Contact = () => {
               />
             </div>
             
-  <div className="z-10 absolute sm:top-[250px] sm:left-[1130px] sm:w-[160px] sm:h-[160px] w-[100px] h-[100px] left-[270px] top-[400px] hover:bg-orange-600 rounded-full border border-orange-600 flex items-center justify-center">
+  <div className="z-10 absolute md:top-[250px] md:left-[1130px] md:w-[160px] md:h-[160px] w-[100px] h-[100px] sm:top-[420px] left-[270px] top-[400px] hover:bg-orange-600 rounded-full border border-orange-600 flex items-center justify-center">
     <button className="w-full h-full text-orange-600 hover:text-white transition duration-300 rounded-full flex items-center justify-center">
       SEND
     </button>
@@ -133,7 +133,7 @@ const Contact = () => {
       <div className=" flex flex-col text-[white] font-custom font-bold lg:text-[135px] text-[55px] relative">
         <span className='sm:pt-[0px] pt-[35px]'>GET </span>
         <div className="flex lg:flex-row sm:flex-row flex-row">
-          <span className="absolute sm:top-20 top-[80px]">IN</span>
+          <span className="absolute lg:top-20 md:top-10 sm:top-10 top-[80px]">IN</span>
           <span className="absolute sm:top-20 top-[123px] lg:left-[260px]">TOUCH</span>
         </div>
         
