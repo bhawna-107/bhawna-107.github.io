@@ -41,7 +41,7 @@ const Hero = () => {
 
 {/* text*/}  
 <div>
-        <div className='z-30 relative sm:px-[90px] px-[19px] font-bold md:text-[135px] text-[55px] sm:text-[80px] font-custom'>
+        <div className='z-30 relative sm:px-[90px] px-[19px] font-bold lg:text-[135px] md:text-[105px] text-[55px] sm:text-[80px] font-custom'>
                 <span className=' absolute md:pt-[62px] sm:pt-[162px] pt-[250px]  pl-[5px]'>
                   Fresh
                 </span>
@@ -60,7 +60,7 @@ const Hero = () => {
         <h2>$124</h2>
         </div>
         <img src={mainstar} alt='star' className='absolute sm:pr-[60px] sm:w-[400px] sm:h-[350px] w-[250px] h-[300px]' />
-        <img src={heroman} alt='bg' className='absolute  sm:pr-[120px] pr-[0px] sm:pl-[0px] pl-[220px]   h-[554px]  object-cover z-10' />
+        <img src={heroman} alt='bg' className='absolute  sm:pr-[120px] pr-[0px] sm:pl-[0px] pl-[200px]   h-[554px]  object-cover z-10' />
         <img src={mainbg} alt='bg' className=' absolute top-36 h-[300px] sm:w-[70%] w-full z-10' />
       </div>      
       <div className='relative'>
