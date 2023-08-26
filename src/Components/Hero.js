@@ -42,13 +42,13 @@ const Hero = () => {
 {/* text*/}  
 <div>
         <div className='z-30 relative sm:px-[90px] px-[19px] font-bold lg:text-[135px] md:text-[105px] text-[55px] sm:text-[80px] font-custom'>
-                <span className=' absolute md:pt-[70px] sm:pt-[158px] pt-[250px]  pl-[5px]'>
+                <span className=' absolute md:pt-[75px] sm:pt-[158px] pt-[250px]  pl-[5px]'>
                   Fresh
                 </span>
-                <span className='absolute md:pt-[158px] sm:pt-[218px] pt-[290px] break-word sm:pl-[300px] pl-[100px]'>
+                <span className='absolute md:pt-[168px] sm:pt-[218px] pt-[290px] break-word sm:pl-[300px] pl-[100px]'>
                   2022
                 </span>
-                <span className='absolute md:pt-[269px] sm:pt-[290px] pt-[340px]  break-word pl-[70px]'>
+                <span className='absolute md:pt-[279px] sm:pt-[290px] pt-[340px]  break-word pl-[70px]'>
                   Look
                 </span>
         </div>
@@ -61,9 +61,9 @@ const Hero = () => {
         </div>
         <img src={mainstar} alt='star' className='absolute sm:pr-[60px] sm:w-[400px] sm:h-[350px] w-[250px] h-[300px]' />
         <img src={heroman} alt='bg' className='absolute  sm:pr-[120px] pr-[0px] sm:pl-[0px] pl-[180px]   h-[554px]  object-cover z-10' />
-        <img src={mainbg} alt='bg' className=' absolute top-36 h-[300px] sm:w-[70%] w-full z-10' />
+        <p className='w-[900px] absolute top-36 h-[300px] sm:w-[70%] w-full opacity-60 bg-[#F07E15] z-10'></p>
       </div>      
-      {/* top-36 */} 
+    
       <div className='relative'>
       <p className='absolute top-[450px] lg:w-[970px] md:w-[670px] sm:w-[300px] w-[180px] h-[2px] opacity-[50%] text-white bg-white border-white'></p>
       <img className="z-20 absolute lg:left-[904px] md:left-[400px] sm:left-40 left-32 top-[406px] "src={smallstar} alt='smallstar' />

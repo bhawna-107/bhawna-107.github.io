@@ -55,7 +55,7 @@ const Navbar = () => {
         </span>
 
         
-      <ul className={`px-[47px]  md:flex flex-row hidden  gap-21 h-[28px] py-[17px] text-[18px] font-normal cursor-pointer`}>
+      <ul className={`px-[47px]  md:flex flex-row hidden  gap-21 h-[28px] py-[10px] text-[18px] font-normal cursor-pointer`}>
         {navarray.map((item) => (
           <li  onClick={() => setActive(item.name)} key={item.id}>
             <a href={`#${item.id}`} onClick={(e) => {
@@ -63,9 +63,9 @@ const Navbar = () => {
         smoothScrollTo(item.id);
       }}>{item.name}</a>
             {item.child && (
-              <ul className="">
+              <ul className="border border-white text-xs ">
                 {item.child.map((childItem) => (
-                  <li key={childItem.id} className="lg:flex hidden">
+                  <li key={childItem.id} className="lg:flex hidden ">
                     <a href={`#${childItem.id}`} className="opacity-[50%]">
                       {childItem.name}
                     </a>
