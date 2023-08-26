@@ -28,7 +28,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div>
-        <div className='sm:px-[90px] px-[19px] relative'>
+        <div className='sm:px-[90px] px-[19px] relative cursor-pointer'>
         <div className='flex justify-between'>
           <p className='text-[40px] '>Shopkart</p>
           <div className='sm:flex hidden justify-center items-center gap-2'>
@@ -42,7 +42,7 @@ const Navbar = () => {
         </span>
 
         
-      <ul className='px-[47px] sm:flex flex-row hidden  gap-21 h-[28px] py-[17px] text-[18px] font-semibold'>
+      <ul className='px-[47px] sm:flex flex-row hidden  gap-21 h-[28px] py-[17px] text-[18px] font-semibold cursor-pointer'>
         {navarray.map((item) => (
           <li  onClick={() => setActive(item.name)} key={item.id}><a href={`#${item.id}`}>{item.name}</a></li>
         ))}
@@ -55,7 +55,7 @@ const Navbar = () => {
           <img
             src={toggle ? close : menu}
             alt='menu'
-            className='w-[28px] h-[28px] object-contain color:black'
+            className='w-[100%] h-[28px] object-contain color:black'
             onClick={() => setToggle(!toggle)}
           />
           </div>

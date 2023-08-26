@@ -131,10 +131,10 @@ const Contact = () => {
       </div>
 
       <div className=" flex flex-col text-[white] font-custom font-bold lg:text-[135px] text-[55px] relative">
-        <span className='sm:pt-[0px] pt-[38px]'>GET </span>
+        <span className='sm:pt-[0px] pt-[35px]'>GET </span>
         <div className="flex lg:flex-row sm:flex-row flex-row">
-          <span className="absolute sm:top-20 top-16">IN</span>
-          <span className="absolute sm:top-20  top-24 lg:left-[260px]">TOUCH</span>
+          <span className="absolute sm:top-20 top-[80px]">IN</span>
+          <span className="absolute sm:top-20 top-[123px] lg:left-[260px]">TOUCH</span>
         </div>
         
       </div>
