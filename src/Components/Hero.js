@@ -8,7 +8,7 @@ import linkedin from '../assets/linkedin.png';
 
 import heroman from '../assets/hero-man.png';
 import mainstar from '../assets/main-star.png';
-import mainbg from '../assets/bg-rectangle.png';
+// import mainbg from '../assets/bg-rectangle.png';
 import arrow from '../assets/arrow.png';
 import smallstar from '../assets/small-star.png';
 import Navbar from './Navbar';
