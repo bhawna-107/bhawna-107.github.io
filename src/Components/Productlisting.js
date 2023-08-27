@@ -87,8 +87,8 @@ const Productlisting = () => {
             </div>
            
             <div className=''>
-            <h2 className="text-black  h-16 overflow-hidden  sm:w-[280px] w-full text-[26px] font-semibold">{product.title}</h2>
-            <p className=" sm:w-[280px]  w-full h-40 overflow-hidden  text-opacity-50 text-sm font-normal">
+            <h2 className="text-black   overflow-hidden  sm:w-[280px] w-full text-[26px] font-semibold">{product.title}</h2>
+            <p className=" sm:w-[280px]  w-full  overflow-hidden  text-opacity-50 text-sm font-normal">
              {product.description}
             </p>
             <p className='text-black text-[26px] font-semibold'>${product.price}</p>  
